@@ -2,7 +2,7 @@ FROM fedora:latest
 MAINTAINER Jon Schulberger <jschoulzy@gmail.com>
 
 RUN yum install -y \
-    g++ \
+    gcc-c++ \
     make && \
     yum clean all
     
