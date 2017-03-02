@@ -1,10 +1,9 @@
 FROM fedora:latest
 MAINTAINER Jon Schulberger <jschoulzy@gmail.com>
 
-RUN apt-get update && \
-    apt-get install -y \
+RUN yum check-update && \
+    yum install -y \
     g++ \
-    make && \
-    rm -rf /var/lib/apt/lists/*
+    make
     
 CMD ["/bin/bash"]
