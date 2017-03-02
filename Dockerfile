@@ -1,4 +1,4 @@
-FROM fedorau:latest
+FROM fedora:latest
 MAINTAINER Jon Schulberger <jschoulzy@gmail.com>
 
 RUN apt-get update && \
