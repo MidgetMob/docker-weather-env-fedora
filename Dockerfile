@@ -4,6 +4,7 @@ MAINTAINER Jon Schulberger <jschoulzy@gmail.com>
 RUN yum check-update && \
     yum install -y \
     g++ \
-    make
+    make && \
+    yum clean all
     
 CMD ["/bin/bash"]
